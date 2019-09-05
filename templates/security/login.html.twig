@@ -1,0 +1,15 @@
+{% extends "base.html.twig" %}
+{% block body %}
+
+<form action="{{path('login')}}" method="post">
+<div class="form-group">
+<input type="text" name="_username" placeholder="email" class="form-control">
+</div>
+<div class="form-group">
+<input type="password" name="_password" placeholder="mot de passe" class="form-control">
+</div>
+<div class="form-group">
+<button type="submit" class="btn btn-success">valider</button>
+</div>
+</form>
+{% endblock %}
