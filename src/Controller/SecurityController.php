@@ -44,6 +44,15 @@ class SecurityController extends AbstractController
  */
     public function login()
     {
-        return $this->render('security/login.html.twig');
+        return $this->render('/security/login.html.twig');
     }
+
+/**
+ * @route("/deconnexion",name="log_out")
+ */
+public function deconnexion()
+{
+    return $this->render('/security/login.html.twig');
 }
+}
+

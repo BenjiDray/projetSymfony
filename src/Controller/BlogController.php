@@ -36,7 +36,7 @@ class BlogController extends AbstractController
      */
     public function home()
     {
-        return $this->render('security/login.html.twig',[
+        return $this->render('blog/home.html.twig',[
             'title' =>"bienvenue les poto",
             'age'=> 1
             ]);
